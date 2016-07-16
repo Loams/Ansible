@@ -1,0 +1,6 @@
+---
+
+  - name: installation apache
+    apt: name={{ item }}
+    with_items:
+        - mysql-server
