@@ -1,9 +1,9 @@
 ---
 - name: Installation des serveurs web
-  host: web
+  hosts: web
   remote_user: root
 
-  tasks:
-    - name: installation apache
-
+  roles:
+    - apache
+    - php
 ...
